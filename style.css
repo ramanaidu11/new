@@ -1,17 +1,86 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 50px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: #e6eef8;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
 }
 
 h1 {
-    color: #2c3e50;
-    font-size: 36px;
-    margin-bottom: 20px;
+  margin: 10px 0;
 }
 
-p {
-    color: #555;
-    font-size: 18px;
+h2 {
+  color: var(--accent);
+  margin-top: 30px;
+}
+
+/* Section Cards */
+section {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: var(--glass);
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Buttons */
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
 }
